@@ -11,5 +11,11 @@
               &bt BT_CLR
             >;
         };
+
+        layer {
+            bindings = <
+              &none
+            >;
+        };
     };
 };
