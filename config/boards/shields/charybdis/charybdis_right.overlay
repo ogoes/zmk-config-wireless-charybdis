@@ -7,3 +7,6 @@
 #include "charybdis.dtsi"
 #include "pmw3610.dtsi"
 
+&default_transform {
+	col-offset = <5>;
+};
