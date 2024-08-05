@@ -41,7 +41,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                &kp LSHFT  &lt LEF TAB &kp SPACE     &kp BSPC  &lt RIG TAB
+                                &kp LSHFT  &kp  TAB &kp SPACE          &kp BSPC  &kp TAB
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
