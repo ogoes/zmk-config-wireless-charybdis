@@ -76,18 +76,18 @@
 
         AUTO-MOUSE {
             bindings = <
-&trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
-&trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
-&trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
-            &mt MOUSE   &mkp RCLK  &trans       &trans  &trans
+              &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
+              &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
+              &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
+                              &mt MOUSE   &trans  &trans       &trans  &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
-&trans  &trans  &trans     &mt SCRL  &trans       &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  
-&trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
+              &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
+              &trans  &trans  &trans     &mt SCRL  &trans       &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  
+              &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
                         &mkp LCLK   &mkp RCLK  &trans  &trans  &trans
             >;
         };
