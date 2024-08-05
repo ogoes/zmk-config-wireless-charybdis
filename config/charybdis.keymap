@@ -15,9 +15,10 @@
 #define NUMS 2
 
 // Mouse layers
-#define MOUSE 3
-#define SCROLL 4
-#define SNIPE 5
+#define AUTOMOUSE 3
+#define MOUSE 4
+#define SCRL 5
+#define SNIPE 6
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSFT k1  &ht LALT k2  &ht LCTRL k3  &lt  k4
@@ -36,12 +37,12 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ;       │
-           HRML(A,         S,         D,         F)     &kp G          &kp H     HRMR(J,         K,         L          SEMI)
+           HRML(A,         S,         D,         F)     &kp G          &kp H     HRMR(J,         K,         L,         SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt LEF TAB  &kp SPACE     &kp BSPC  &lt RIG TAB
+                                  &lt LEF TAB  &kp SPACE     &kp BSPC  &lt RIG TAB
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -78,6 +79,15 @@
             bindings = <
 &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
 &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
+            &mt MOUSE   &mkp RCLK  &trans       &trans  &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans     &mt SCRL  &trans       &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  
 &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
                         &mkp LCLK   &mkp RCLK  &trans  &trans  &trans
             >;
