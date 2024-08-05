@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "combos.dtsi"
-#include "behaviors.dtsi"
+//#include "behaviors.dtsi"
 
 
 #define QWERTY 0
