@@ -17,7 +17,6 @@
 #define AUTOMOUSE 4
 #define MOUSE 5
 #define SCROLL 6
-#define SNIPER 7
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
@@ -76,22 +75,13 @@
         _MOUSE {
             bindings = <
 &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
-&trans  &trans  &mo SNIPER &mo SCROLL  &trans       &trans  &mkp LCLK &mkp RCLK  &mkp MCLK  &trans  
+&trans  &trans  &trans     &mo SCROLL  &trans       &trans  &mkp LCLK &mkp RCLK  &mkp MCLK  &trans  
 &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  
                    &trans  &trans  &trans       &trans  &trans
             >;
         };
 
         _SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  
-                        &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        _SNIPER {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  
