@@ -1,0 +1,60 @@
+/ {
+combos {
+        compatible = "zmk,combos";
+
+        LeftClickRight {
+            bindings = <&mkp LCLK>;
+            key-positions = <19 20>;
+        };
+
+        RightClickRight {
+            bindings = <&mkp RCLK>;
+            key-positions = <20 21>;
+        };
+
+        MiddleClickRight {
+            bindings = <&mkp MCLK>;
+            key-positions = <21 22>;
+        };
+
+        ParaLeft {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <4 16>;
+        };
+
+        ParaRight {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <7 19>;
+        };
+
+        BrakLeft {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <3 15>;
+        };
+
+        BrakRight {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <8 20>;
+        };
+
+        BraceLeft {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <2 14>;
+        };
+
+        BraceRight {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <9 21>;
+        };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <8 9>;
+        };
+
+        CapsWord {
+            bindings = <&caps_word>;
+            key-positions = <17 18>;
+        };
+    };
+};

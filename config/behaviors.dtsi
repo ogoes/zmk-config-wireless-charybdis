@@ -1,0 +1,34 @@
+#define U_TAPPING_TERM 200
+/ {
+
+    behaviors {
+        u_mt: u_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "u_mt";
+            #binding-cells = <2>;
+            tapping_term_ms = <U_TAPPING_TERM>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+        u_lt: u_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "u_lt";
+            #binding-cells = <2>;
+            tapping_term_ms = <U_TAPPING_TERM>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+        };
+
+        Shift_Enter: Shift_Enter {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_ENTER";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <40>;
+            tapping-term-ms = <100>;
+        };
+    };
+
+};
