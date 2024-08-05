@@ -18,6 +18,9 @@
 #define MOUSE 5
 #define SCROLL 6
 
+#define HOMEROWL (c1, c2, c3, c4, c5) &mt LSHFT c1 &mt LCTRL c2 &mt LALT c3 &mt LGUI c4 &kp c5
+#define HOMEROWR (c1, c2, c3, c4, c5) &kp c1 &mt RGUI c2 &mt RALT c3 &mt RCTRL c4 &mt RSHFT c5
+
 / {
     chosen { zmk,matrix_transform = &default_transform; };
 };
@@ -29,10 +32,10 @@
 
         _BASE {
             bindings = <
-            &kp Q             &kp W             &kp E          &kp R               &kp T    &kp Y  &kp U               &kp I          &kp O              &kp P               
-            &u_mt LEFT_GUI A  &u_mt LEFT_ALT S  &u_mt LCTRL D  &u_mt LEFT_SHIFT F  &kp G    &kp H  &u_mt LEFT_SHIFT J  &u_mt RCTRL K  &u_mt RIGHT_ALT L  &u_mt RIGHT_GUI SEMI
-            &kp Z             &kp X             &kp C          &kp V               &kp B    &kp N  &kp M               &kp COMMA      &kp DOT            &kp FSLH           
-                                             &kp LGUI     &kp TAB   &lt NAV SPACE                 &lt NUM BACKSPACE   &kp RET
+            &kp Q             &kp W             &kp E          &kp R               &kp T          &kp Y  &kp U               &kp I          &kp O            &kp P               
+       HOMEROWL(A,                S,                D,             F,                 G)    HOMEROWR(H,     J,                  K,             L,               SEMICOLON)
+            &kp Z             &kp X             &kp C          &kp V               &kp B          &kp N  &kp M               &kp COMMA      &kp DOT          &kp FSLH           
+                                             &kp LGUI        &kp TAB       &lt NAV SPACE          &lt NUM BACKSPACE   &kp RET
             >;
         };
 
