@@ -1,3 +1,5 @@
+#define U_TAPPING_TERM 200
+
 / {
     behaviors {
         u_mt: u_mt {

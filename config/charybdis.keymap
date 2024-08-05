@@ -8,7 +8,6 @@
 #include "combos.dtsi"
 #include "behaviors.dtsi"
 
-#define U_TAPPING_TERM 200
 
 #define QWERTY 0
 #define MOV 1
