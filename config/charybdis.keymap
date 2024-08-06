@@ -10,15 +10,13 @@
 #define BASE 0
 #define NAV 1
 #define NUM 2
-#define FUN 3
+#define SYM 3
+#define FUN 4
 
 // mouse
-#define AUTOMOUSE 4
-#define MOUSE 5
-#define SCROLL 6
-
-#define HOMEROWL(c1, c2, c3, c4, c5) &mt LSHFT c1 &mt LCTRL c2 &mt LALT c3 &mt LGUI c4 &kp c5
-#define HOMEROWR(c1, c2, c3, c4, c5) &kp c1 &mt RGUI c2 &mt RALT c3 &mt RCTRL c4 &mt RSHFT c5
+#define AUTOMOUSE 5
+#define MOUSE 6
+#define SCROLL 7
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
@@ -39,6 +37,7 @@
       ╰────────╯ ╰─────╯         */
     keymap {
         compatible = "zmk,keymap";
+         
 
         _BASE {
             bindings = <
@@ -51,14 +50,23 @@
 
         _NAV {
             bindings = <
-              &trans    &kp UP    &trans     &trans  &trans    &kp N7           &kp N8                &kp N9          &kp N0  &kp HOME
-              &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans    &kp N4           &mt RIGHT_SHIFT N5  &mt RCTRL N6  &trans  &trans
-              &trans    &trans    &trans     &trans  &trans    &kp N1           &kp N2                &kp N3          &trans  &trans
+              &trans  &trans  &trans     &trans  &trans       &trans    &trans    &trans     &trans    &trans
+              &trans  &trans  &trans     &trans  &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT  &trans
+              &trans  &trans  &trans     &trans  &trans       &trans    &trans    &trans     &trans    &trans
                             &trans     &trans  &trans    &lt FUN DELETE  &kp LSHFT
             >;
         };
 
-        _SYMNUM {
+        _NUM {
+            bindings = <
+              &trans  &kp 1   &kp 2      &kp 3    &trans       &trans    &trans    &trans     &trans    &trans
+              &trans  &kp 4   &kp 5      &kp 6    &kp 0        &trans    &trans    &trans     &trans    &trans
+              &trans  &kp 7   &kp 8      &kp 9    &trans       &trans    &trans    &trans     &trans    &trans
+                              &trans     &trans   &mo FUN     &trans     &trans
+            >;
+        };
+
+        _SYMBOLS {
             bindings = <
 &kp EXCL      &kp AT       &kp HASH    &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS                 &kp KP_MULTIPLY   &kp LPAR              &kp RPAR              
 &trans        &bt BT_PRV   &bt BT_NXT  &trans    &trans       &kp UNDER  &u_mt RIGHT_SHIFT EQUAL  &u_mt RCTRL LBKT  &u_mt RIGHT_ALT RBKT  &u_mt RIGHT_GUI BSLH  
