@@ -7,6 +7,8 @@
 
 #include "behaviors.dtsi"
 
+
+// layers
 #define BASE 0
 #define NAV 1
 #define NUM 2
@@ -17,6 +19,11 @@
 #define AUTOMOUSE 5
 #define MOUSE 6
 #define SCROLL 7
+
+
+&mt {
+    tapping-term-ms = <500>;
+};
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
