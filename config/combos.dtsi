@@ -37,7 +37,7 @@ compatible = "zmk,combos";
       ╰────────╯ ╰─────╯         */
 
 COMBO(tab, &kp TAB, 1 2)
-COMBO(shift, &skq LSHFT, 7 8)
+COMBO(shift, &sk LSHFT, 7 8)
 COMBO(ctrl, &sk LCTL, 21 22)
 COMBO(backspace, &kp BSPC, 27 28)
 COMBO(cmd, &sk LCMD, 30 31)
