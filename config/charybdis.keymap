@@ -24,7 +24,7 @@
 
 
 &mt {
-    tapping-term-ms = <800>;
+    tapping-term-ms = <999>;
 };
 
 / {
@@ -78,7 +78,7 @@
         _SYMBOLS {
             bindings = <
 &kp EXCL      &kp AT       &kp HASH    &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS                 &kp KP_MULTIPLY   &kp LPAR              &kp RPAR              
-&trans        &bt BT_PRV   &bt BT_NXT  &trans    &trans       &kp UNDER  &u_mt RIGHT_SHIFT EQUAL  &u_mt RCTRL LBKT  &u_mt RIGHT_ALT RBKT  &u_mt RIGHT_GUI BSLH  
+&trans        &bt CARET    &bt GRAVE   &kp SQT   &trans       &kp UNDER  &u_mt RIGHT_SHIFT EQUAL  &u_mt RCTRL LBKT  &u_mt RIGHT_ALT RBKT  &u_mt RIGHT_GUI BSLH  
 &out OUT_TOG  &bootloader  &trans      &trans    &trans       &kp MINUS  &kp PLUS                 &kp LBRC          &kp RBRC              &kp PIPE             
                                        &trans      &trans    &mo FUN        &trans     &trans
             >;
