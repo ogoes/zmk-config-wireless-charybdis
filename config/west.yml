@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/petejohanson
     - name: inorichi
-      url-base: https://github.com/inorichi
+      url-base: https://github.com/ogoes
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,3 +14,4 @@ manifest:
       revision: main
   self:
     path: config
+
