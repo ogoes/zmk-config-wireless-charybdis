@@ -51,7 +51,7 @@
         _NAV {
             bindings = <
               &trans  &trans  &trans     &trans  &trans       &trans    &trans    &trans     &trans    &trans
-              &trans  &trans  &trans     &trans  &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT  &trans
+              &trans  &trans  &trans     &trans  &trans       &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT &trans
               &trans  &trans  &trans     &trans  &trans       &trans    &trans    &trans     &trans    &trans
                             &trans     &trans  &trans    &lt FUN DELETE  &kp LSHFT
             >;
