@@ -36,6 +36,8 @@ compatible = "zmk,combos";
 ╰─────╮30 31 32│ │33 34╭────────╯
       ╰────────╯ ╰─────╯         */
 
+
+COMBO(esc, &kp ESC, 0 1)
 COMBO(tab, &kp TAB, 1 2)
 COMBO(shift, &sk LSHFT, 7 8)
 COMBO(ctrl, &sk LCTL, 21 22)
