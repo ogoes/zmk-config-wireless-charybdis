@@ -39,6 +39,6 @@ COMBO(paste, &kp LC(V), 22 23)
 COMBO(cut, &kp LC(X), 20 21)
 
 COMBO(capsword, &caps_word, 10 11)
-COMBO(capslock, &kp CAPSLOCK, 20 21)
+COMBO(capslock, &kp CAPSLOCK, 11 12)
 
 //COMBO_LONG(capsword, &caps_word, 14 15)
