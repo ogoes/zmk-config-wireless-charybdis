@@ -1,0 +1,7 @@
+/ {
+    prog_caps: prog_caps {
+        compatible = "zmk,behavior-caps-word";
+        #binding-cells = <0>;
+        continue-list = <UNDERSCORE>;
+    };
+};
