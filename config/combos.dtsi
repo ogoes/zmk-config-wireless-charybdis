@@ -32,6 +32,7 @@ compatible = "zmk,combos";
 
 
 COMBO(esc, &kp ESC, 0 1)
+COMBO(esc_1, &kp ESC, 13 16)
 COMBO(tab, &kp TAB, 1 2)
 
 COMBO(copy, &kp LC(C), 21 22)
